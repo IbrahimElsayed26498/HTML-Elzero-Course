@@ -5,119 +5,34 @@
 		<meta name = "description" content = "Welcome to my website">
 		<title> Our first Page</title>
 		<style>
-			table,td,th{border: 1px solid #676767}
-			table {width: 500px}
-			
+				.test
+				{
+					color: white;
+					background:red
+				}
+				.test2
+				{
+					color: blue
+				}
+				.our-span
+				{
+					color: green
+				}
 		</style>
 		<link rel = "stylesheet" href="css/style.css">
 	</head>
 	
 	<body>
-		<!--Here We are using the col span where you caon mirge column cells together-->
-		<div>
-			<table>
-				<caption>Descripe the Colspan</caption>
-				<thead>
-					<tr>
-						<th colspan="2">Programming</th>
-						<th colspan="3">Web Design</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>PHP</td>
-						<td>MySQL</td>
-						<td>Html</td>
-						<td>CSS</td>
-						<td>jQuery</td>
-					</tr>
-				</tbody>
-			</table>
+		<!--Element class-->
+		<div class="test">
+			This is Dev1
 		</div>
-		<!--Here we are using rowspan where you can merge row's cells together-->
-		<div>
-			<table>
-				<catption>Desctipt the Rowspan</caption>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Email</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td rowspan="3">Ibrahim Elsayed</td>
-						<td>ibrahim@gmail.com</td>
-					</tr>
-					<tr>
-						<!--<td>Ibrahim Elsayed</td>-->
-						<td>i@gmail.com</td>
-					</tr>
-					<tr>
-						<!--<td>Ibrahim Elsayed</td>-->
-						<td>i2@gmail.com</td>
-					</tr>
-					<tr>
-						<td rowspan="2">Ahmed Mohamed</td>
-						<td>Ahmed@gmail.com</td>
-					</tr>
-					<tr>
-						<td>A@gmail.com</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="test2">
+			This is Dev2 <span class="our-span">this is our span</span>
 		</div>
-		<!--Here we are usin colgroup where you can make columns with the same style
-			you first choose the columns you want to applay style on it,
-			then the next columns, and so on.
-			colgroup must be begore head and body and so on
-		-->
-		<div>
-			<table>
-				<caption>Descripe the ColGroup</caption>
-				<col span="1" style="background:#EEE">
-				<col span="3" style="background:#DDD">
-				<col span="2" style="background:#AAA">
-				<thead>
-					<tr>
-						<th>Programming</th>
-						<th>Programming</th>
-						<th>Design</th>
-						<th>Design</th>
-						<th>Design</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>C#</td>
-						<td>SQL server</td>
-						<td>HTML</td>
-						<td>Css</td>
-						<td>jQuery</td>
-					</tr>
-					<tr>
-						<td>C#</td>
-						<td>SQL server</td>
-						<td>HTML</td>
-						<td>Css</td>
-						<td>jQuery</td>
-					</tr>
-					<tr>
-						<td>C#</td>
-						<td>SQL server</td>
-						<td>HTML</td>
-						<td>Css</td>
-						<td>jQuery</td>
-					</tr>
-					<tr>
-						<td>C#</td>
-						<td>SQL server</td>
-						<td>HTML</td>
-						<td>Css</td>
-						<td>jQuery</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="test">
+			This is Dev3
 		</div>
+		<p class="test2">This is paragraph</p>
 	</body>
 </html>

@@ -3,9 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name = "description" content = "Welcome to my website">
-		<title>Form Part 2 Button, File, Image, Hidden, Reset, Radio</title>
+		<title>Form Part 3. FieldSet, legend</title>
+		<!--Giving the field some design-->
 		<style>
-				
+		    
+			fieldset
+			{
+				background:#EFEFEF;
+				padding:10px
+			}
+			legend
+			{
+				background:#FFF;
+				border:1px solid #CCC;
+				padding:5px;
+				margin-button:20px
+			}
+			
 		</style>
 		<link rel = "stylesheet" href="css/style.css">
 		<script>
@@ -17,22 +31,34 @@
 	
 	<body>
 		<form name="register">
-			<div>
-				<label>Enter your Name</label>
-				<input name="name" type="text" value="Ibrahim">
-			</div>
-			<div>
-				<label>Enter your password</label>
-				<input name="password" type="password" maxlength="15">
-			</div>
-			<div>
-				<label>Remember me</label>
-				<input type="checkbox">
-			</div>
-			<div>
-				<label>Upload your CV</label>
-				<input type="file">
-			</div>
+		<!-- It's used to group the form elements
+		and bprder them, and giving them a title-->
+			<fieldset>
+			<!-- Legeeng is the title of the fieldset -->
+				<legend>Personal Information</legend>
+				<div>
+					<label>Enter your Name</label>
+					<input name="name" type="text" value="Ibrahim">
+				</div>
+				<div>
+					<label>Enter your password</label>
+					<input name="password" type="password" maxlength="15">
+				</div>
+				<div>
+					<label>Your message</label><br>
+					<textarea class="message" rows="6" cols="60" readonly>Hello.</textarea>
+				</div>
+				<div>
+					<label>Remember me</label>
+					<input type="checkbox">
+				</div>
+				<div>
+					<label>Upload your CV</label>
+					<input type="file">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Your Favourite</legend>
 			<div>
 				<label>Choose your favourite browser</label>
 				<div>
@@ -56,19 +82,39 @@
 				<div>
 					<input type="radio" name="mobile" value="nokia">Nokia
 				</div>
-			</div>
-			<div>
-				<label>Choose your city</label>
-				<input type="image" src="./imgs/map-egypt.jpg" name="map-egypt">
-			</div>
-			<div>
-				<input type="hidden" name="id" value="testing">
-			</div>
-			<div>
-				<input type="submit" value="Sign up">
-				<input type="reset" value="Reset defaults">
-				<input type="button" onclick="sayHello()" name="say hello" value="Say Hello">
-			</div>
+			</fieldset>
+			<fieldset>
+				<legend>Send Options</legend>
+				
+				<!--
+				<div>
+					<label>Choose your city</label>
+					<input type="image" src="./imgs/map-egypt.jpg" name="map-egypt">
+				</div>
+				<div>
+					<input type="hidden" name="id" value="testing">
+				</div>
+				-->
+				<div>
+				<!-- Using select-->
+					<select name="time" size="1" >
+					<!-- Group the options and give them a title (label) -->
+						<optgroup label="Near Time">
+							<option value="1" disabled>Now</option>
+							<option value="2">Tomorrow</option>
+							<option value="3" selected>Week</option>
+						</optgroup>
+						<optgroup label="Far Time">
+							<option value="4">Month</option>
+							<option value="5">2 Months</option>
+							<option value="6">3 Months</option>
+						</optgroup>
+					</select>
+					<input type="submit" value="Sign up">
+					<input type="reset" value="Reset defaults">
+					<input type="button" onclick="sayHello()" name="say hello" value="Say Hello">
+				</div>
+			</fieldset>
 		</form>
 	</body>
 </html>

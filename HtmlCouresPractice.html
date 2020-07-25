@@ -3,23 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name = "description" content = "Welcome to my website">
-		<title> Our first Page</title>
+		<title>Form Part 2 Button, File, Image, Hidden, Reset, Radio</title>
 		<style>
-				.test
-				{
-					color: white;
-					background:red
-				}
-				.test2
-				{
-					color: blue
-				}
-				.our-span
-				{
-					color: green
-				}
+				
 		</style>
 		<link rel = "stylesheet" href="css/style.css">
+		<script>
+			function sayHello(){
+				alert("Hello Ibrahim");
+			}
+		</script>
 	</head>
 	
 	<body>
@@ -37,7 +30,44 @@
 				<input type="checkbox">
 			</div>
 			<div>
+				<label>Upload your CV</label>
+				<input type="file">
+			</div>
+			<div>
+				<label>Choose your favourite browser</label>
+				<div>
+					<input type="radio" name="browser" value="chrome">Google Chrome
+				</div>
+				<div>
+					<input type="radio" name="browser" value="firefox">Mozila Fire Fox
+				</div>
+				<div>
+					<input type="radio" name="browser" value="opera">Opera
+				</div>
+			</div>
+			<div>
+				<label>Choose your favourite Mobile</label>
+				<div>
+					<input type="radio" name="mobile" value="sumsong">SumSong
+				</div>
+				<div>
+					<input type="radio" name="mobile" value="goinee">GOINEE
+				</div>
+				<div>
+					<input type="radio" name="mobile" value="nokia">Nokia
+				</div>
+			</div>
+			<div>
+				<label>Choose your city</label>
+				<input type="image" src="./imgs/map-egypt.jpg" name="map-egypt">
+			</div>
+			<div>
+				<input type="hidden" name="id" value="testing">
+			</div>
+			<div>
 				<input type="submit" value="Sign up">
+				<input type="reset" value="Reset defaults">
+				<input type="button" onclick="sayHello()" name="say hello" value="Say Hello">
 			</div>
 		</form>
 	</body>

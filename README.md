@@ -2,3 +2,5 @@
 Inside the course we are learning HTML,
 and this repo is to write what I learned
 about HTML.
+### Note
+To see every video of the course, see "commits"
